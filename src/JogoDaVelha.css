@@ -1,0 +1,110 @@
+body{
+    background-color: aliceblue;
+    display: grid;
+    text-align: center;
+}
+
+.quadrado {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3,200px);
+    grid-template-rows: repeat(3, 170px);
+    gap: 1rem;
+}
+
+.quadrados {
+    background-color: rgb(221, 221, 221);
+
+    cursor: pointer;
+}
+
+.game-over{
+    opacity: 0.7;
+} 
+
+.O {
+    color: darkgreen;
+    background-color: lightgreen;
+    font-size: 7rem;
+
+    cursor: not-allowed;
+}
+
+.X {
+    color: darkblue;
+    background: lightblue;
+    font-size: 7rem;
+
+    cursor: not-allowed;
+}
+
+span.X, span.O {
+    background: none;
+    font-size: 2rem;
+    cursor:unset;
+}
+
+.placar-e-botoes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.placar {
+    margin-right: 2rem;
+}
+
+.botoes {
+    display: flex;
+    margin-right: 6rem;
+    width: 2rem;
+}
+
+.tabela {
+    border-collapse: collapse;
+    width: 14rem;
+}
+
+table, th, tr, td {
+    border: 1px solid black;
+}
+
+th.X, th.O {
+    cursor:unset;
+    background: none;
+    font-size: 1rem;
+}
+
+.empate {
+    color: purple
+}
+
+.reinicia-tabuleiro {
+    background: green;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    text-decoration: none;
+}
+
+.reinicia-tabuleiro:hover {
+    background: darkgreen;
+    cursor: pointer;
+}
+
+.reinicia-jogo {
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    margin-left: 1rem;
+    outline: none;
+    text-decoration: none;
+}
+
+.reinicia-jogo:hover{
+    background: darkred;
+    cursor: pointer;
+}
+
